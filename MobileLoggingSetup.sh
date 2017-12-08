@@ -59,9 +59,9 @@ createFileSudo() {
 # Instalación de apktool para reversear el binario
 downloadFile apktool https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool
 downloadFile apktool_2.3.0.jar https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.3.0.jar
+mv apktool_2.3.0.jar apktool.jar
 sudo chmod +x apktool
 sudo chmod +x apktool.jar
-mv apktool_2.3.0.jar apktool.jar
 sudo mv apktool.jar /usr/local/bin
 sudo mv apktool /usr/local/bin
 
