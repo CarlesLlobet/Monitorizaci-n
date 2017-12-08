@@ -56,6 +56,12 @@ createFileSudo() {
 	fi
 }
 
+# Instalación de los prerequisitos de apktool
+installPackage default-jre
+installPackage gcj-4.8-jre-headless
+installPackage openjdk-7-jre-headless
+installPackage gcj-4.6-jre-headless
+installPackage openjdk-6-jre-headless
 # Instalación de apktool para reversear el binario
 downloadFile apktool https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool
 downloadFile apktool_2.3.0.jar https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.3.0.jar
@@ -69,6 +75,7 @@ sudo mv apktool /usr/local/bin
 downloadFile dex-tools-2.0.zip https://github.com/pxb1988/dex2jar/releases/download/2.0/dex-tools-2.0.zip
 unzip dex-tools-2.0.zip
 mv dex2jar-2.0/d2j-dex2jar.sh dex2jar-2.0/dex2jar
+sudo chmod +x dex2jar-2.0/dex2jar
 sudo mv dex2jar-2.0/dex2jar /usr/local/bin
 
 # Instalación de las herramientas de android debug bridge
@@ -77,7 +84,7 @@ installPackage android-tools-adb
 # Instalación de pidcat
 downloadFile pidcat.py https://github.com/JakeWharton/pidcat/blob/master/pidcat.py
 sudo mv pidcat.py /usr/local/bin
-echo "alias pidcat='python /usr/local/bin/pidcat.py'" >> ~/.bash-aliases
+echo "alias pidcat='python /usr/local/bin/pidcat.py'" > ~/.bash-aliases
 source ~/.bashrc
 
 exit 0
