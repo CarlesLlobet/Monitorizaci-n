@@ -60,7 +60,6 @@ createFileSudo() {
 installPackage default-jre
 installPackage gcj-4.8-jre-headless
 installPackage openjdk-7-jre-headless
-installPackage gcj-4.6-jre-headless
 installPackage openjdk-6-jre-headless
 # Instalación de apktool para reversear el binario
 downloadFile apktool https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool
