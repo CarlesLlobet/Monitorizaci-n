@@ -62,7 +62,8 @@ downloadFile apktool_2.3.0.jar https://bitbucket.org/iBotPeaches/apktool/downloa
 sudo chmod +x apktool
 sudo chmod +x apktool.jar
 mv apktool_2.3.0.jar apktool.jar
-sudo mv apktool.jar apktool /usr/local/bin
+sudo mv apktool.jar /usr/local/bin
+sudo mv apktool /usr/local/bin
 
 # Instalación de dex2jar para convertir el codigo maquina en java
 downloadFile dex-tools-2.0.zip https://github.com/pxb1988/dex2jar/releases/download/2.0/dex-tools-2.0.zip
@@ -77,6 +78,6 @@ installPackage android-tools-adb
 downloadFile pidcat.py https://github.com/JakeWharton/pidcat/blob/master/pidcat.py
 sudo mv pidcat.py /usr/local/bin
 echo "alias pidcat='python /usr/local/bin/pidcat.py'" >> ~/.bash-aliases
-sudo source ~/.bashrc
+source ~/.bashrc
 
 exit 0
