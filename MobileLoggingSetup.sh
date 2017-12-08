@@ -74,8 +74,8 @@ sudo mv apktool /usr/local/bin
 downloadFile dex-tools-2.0.zip https://github.com/pxb1988/dex2jar/releases/download/2.0/dex-tools-2.0.zip
 unzip dex-tools-2.0.zip
 mv dex2jar-2.0/d2j-dex2jar.sh dex2jar-2.0/dex2jar
-sudo chmod +x dex2jar-2.0/dex2jar
-sudo mv dex2jar-2.0/dex2jar /usr/local/bin
+sudo chmod +x dex2jar-2.0/*
+sudo mv dex2jar-2.0/* /usr/local/bin
 
 # Instalación de las herramientas de android debug bridge
 installPackage android-tools-adb
