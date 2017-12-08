@@ -57,15 +57,15 @@ createFileSudo() {
 }
 
 # Instalación de apktool para reversear el binario
-downloadFile https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool
-downloadFile https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.3.0.jar
+downloadFile apktool https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool
+downloadFile apktool_2.3.0.jar https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.3.0.jar
 mv apktool_2.3.0.jar apktool.jar
 sudo mv apktool.jar apktool /usr/local/bin
 sudo chmod +x apktool
 sudo chmod +x apktool.jar
 
 # Instalación de dex2jar para convertir el codigo maquina en java
-downloadFile https://github.com/pxb1988/dex2jar/releases/download/2.0/dex-tools-2.0.zip
+downloadFile dex-tools-2.0.zip https://github.com/pxb1988/dex2jar/releases/download/2.0/dex-tools-2.0.zip
 unzip dex-tools-2.0.zip
 mv dex2jar-2.0/d2j-dex2jar.sh dex2jar-2.0/dex2jar
 sudo mv dex2jar-2.0/dex2jar /usr/local/bin
@@ -74,7 +74,7 @@ sudo mv dex2jar-2.0/dex2jar /usr/local/bin
 installPackage android-tools-adb
 
 # Instalación de pidcat
-downloadFile https://github.com/JakeWharton/pidcat/blob/master/pidcat.py
+downloadFile pidcat.py https://github.com/JakeWharton/pidcat/blob/master/pidcat.py
 sudo mv pidcat.py /usr/local/bin
 echo "alias pidcat='python /usr/local/bin/pidcat.py'" >> ~/.bash-aliases
 sudo src ~/.bashrc
