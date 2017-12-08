@@ -81,7 +81,7 @@ sudo mv dex2jar-2.0/* /usr/local/bin
 installPackage android-tools-adb
 
 # Instalación de pidcat
-downloadFile pidcat.py https://github.com/JakeWharton/pidcat/blob/master/pidcat.py
+downloadFile pidcat.py https://raw.githubusercontent.com/JakeWharton/pidcat/master/pidcat.py
 sudo mv pidcat.py /usr/local/bin
 echo "alias pidcat='python /usr/local/bin/pidcat.py'" > ~/.bash_aliases
 source ~/.bashrc
